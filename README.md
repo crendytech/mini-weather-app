@@ -34,7 +34,7 @@ cd mini-weather-app
 ### 2️⃣ Install Dependencies
 
 ```sh
-yarn install  # or npm install
+pnpm install  # or npm install
 ```
 
 ### 3️⃣ Set Up Environment Variables
@@ -48,13 +48,13 @@ VITE_WEATHER_API_KEY=your_api_key_here
 ### 4️⃣ Start the Development Server
 
 ```sh
-yarn dev  # or npm run dev
+pnpm dev  # or npm run dev
 ```
 
 ### 5️⃣ Build for Production
 
 ```sh
-yarn build  # or npm run build
+pnpm build  # or npm run build
 ```
 
 ## 🔗 API Reference
