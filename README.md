@@ -1,27 +1,63 @@
-# vite-template-redux
+# Mini Weather App
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+## 🌤 Overview
+
+This is a **mini weather react application** that allows users to add multiple cities and view their **current weather conditions** along with a **5-day forecast**. The app provides detailed information such as temperature, humidity, wind speed, and weather conditions using data fetched from [WeatherAPI](https://www.weatherapi.com/).
+
+## 🚀 Features
+
+- **Add Multiple Cities** – Track the weather for different locations.
+- **Current Weather Details** – Displays temperature, humidity, wind speed, and condition.
+- **5-Day Forecast** – Shows daily min/max temperature and weather conditions.
+- **Pin Cities** – Save preferred cities for quick access (persisted in local storage).
+- **Loading & Error Handling** – Shows loading state while fetching data, handles API errors gracefully.
+- **Remove Cities** – Remove unwanted cities from the list.
+- **Retry on Network Errors** – Option to retry fetching weather data.
+
+## 🖥 Tech Stack
+
+- **Frontend:** React + Vite + TypeScript
+- **State Management:** Redux Toolkit
+- **Styling:** Tailwind CSS
+- **API:** [WeatherAPI](https://www.weatherapi.com/)
+
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
 
 ```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
+git clone https://github.com/crendytech/mini-weather-app.git
+cd mini-weather-app
 ```
 
-## Goals
+### 2️⃣ Install Dependencies
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+```sh
+yarn install  # or npm install
+```
 
-## Scripts
+### 3️⃣ Set Up Environment Variables
 
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
+Create a `.env` file in the root directory and add your API key:
 
-## Inspiration
+```sh
+VITE_WEATHER_API_KEY=your_api_key_here
+```
 
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+### 4️⃣ Start the Development Server
+
+```sh
+yarn dev  # or npm run dev
+```
+
+### 5️⃣ Build for Production
+
+```sh
+yarn build  # or npm run build
+```
+
+## 🔗 API Reference
+
+- Weather data is fetched from [WeatherAPI](https://www.weatherapi.com/)
+- Base URL: `https://api.weatherapi.com/v1/forecast.json`
